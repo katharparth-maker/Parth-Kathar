@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Portfolio | Web Developer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #040404;
+      color: #ffffff;
+    }
+
+    /* Navbar */
+    header {
+      width: 100%;
+      padding: 20px 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #050505;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #ffffff;
+    }
+
+    nav a:hover {
+      color: #1abc9c;
+    }
+
+    .btn-contact {
+      padding: 8px 24px;
+      border-radius: 3px;
+      border: none;
+      background: #1abc9c;
+      color: #000;
+      font-size: 13px;
+      cursor: pointer;
+    }
+
+    /* Hero section */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 80px;
+      padding: 70px 80px;
+    }
+
+    .hero-img img {
+      width: 260px;
+      height: 360px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    .hero-text span.small-title {
+      color: #1abc9c;
+      font-size: 14px;
+      letter-spacing: 2px;
+    }
+
+    .hero-text h1 {
+      margin-top: 15px;
+      font-size: 44px;
+      font-weight: 300;
+      line-height: 1.2;
+    }
+
+    .hero-text h1 .highlight {
+      color: #1abc9c;
+      font-weight: 600;
+      display: block;
+    }
+
+    .hero-text p {
+      margin-top: 18px;
+      max-width: 500px;
+      font-size: 13px;
+      color: #b7b7b7;
+      line-height: 1.6;
+    }
+
+    .btn-download {
+      margin-top: 28px;
+      padding: 10px 32px;
+      border-radius: 3px;
+      border: 1px solid #1abc9c;
+      background: transparent;
+      color: #1abc9c;
+      font-size: 13px;
+      cursor: pointer;
+    }
+
+    .btn-download:hover {
+      background: #1abc9c;
+      color: #000;
+    }
+
+    /* Simple responsiveness */
+    @media (max-width: 900px) {
+      header {
+        padding: 15px 20px;
+      }
+
+      .hero {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+      }
+
+      .hero-text p {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header>
+    <div class="logo">
+      <!-- small avatar/logo -->
+      <img src="king.jpg" alt="Logo" />
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">SERVICES</a></li>
+        <li><a href="#">BLOG</a></li>
+        <li><a href="#">MORE</a></li>
+      </ul>
+    </nav>
+
+    <button class="btn-contact">CONTACT</button>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-img">
+      <!-- main left image -->
+      <img src="king.jpg" alt="Profile photo" />
+    </div>
+
+    <div class="hero-text">
+      <span class="small-title">PaRtH PaDmAkAr KaThAr</span>
+      <h1>
+        I'm a AI
+        <span class="highlight">Specialists</span>
+      </h1>
+<h1>
+        I'm a Data
+        <span class="highlight">Scientist</span>
+      </h1>
+      <p>
+        AI Engineer<br>
+<h3>An AI engineer</h3> 
+builds and integrates AI models into functional, scalable, and efficient applications. They are responsible for the entire AI system development life cycle, from design to deployment and maintenance in a production environment. 
+Key Responsibilities:
+Designing and Developing AI systems using deep learning, natural languag…
+NLP, and computer vision techniques.
+Deploying and Integrating AI models into existing software applications and products, often creating APIs for other applications to interact with them.
+Optimizing Performance of AI models to ensure they run efficiently and reliably in real-time, at scale.
+Managing Infrastructure for AI development and production, working with cloud platforms (AWS, Google Cloud, Azure) and DevOps principles. <br><br>
+<h3>Data Scientist<br></h3>
+A data scientist acts as the "analytical brain" behind data-driven decision-making, using data to uncover patterns, trends, and actionable insights. Their work often informs business strategy and creates the models that AI engineers later operationalize. 
+Key Responsibilities:
+Gathering and cleaning data for analysis.
+Analyzing data to find patterns and relationships.
+Building predictive models using statistical and machine learning techniques.
+Presenting data insights and recommendations to others. 
+      </p>
+      <button class="btn-download">DOWNLOAD CV</button>
+    </div>
+  </section>
+
+</body>
+</html>
